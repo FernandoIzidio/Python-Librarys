@@ -2,6 +2,8 @@
 SQLite é uma base de dados relacional que suporta as operações ACID(Atomicidade, consistência, isolamento, durabilidade),
 a principal caracteristica do sqlite é que é uma base de dados aclopada na aplicação, oque evita ter uma base de dados externa se tornando ótima para aplicações moveis, e para desenvolvimento em dispositivos limitados
 
+NÃO É PRECISO BAIXAR UMA IMAGEM do SQLITE
+
 INSERT INTO Table(name, city) VALUES (?, ?) -
 ? - delimita um valor a ser inserido na consulta, ou seja habilita consulta parametrizada
 em alguns outros sgbds o delimitador é %s
