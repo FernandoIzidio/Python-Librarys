@@ -20,15 +20,16 @@ Ao criar programas com variaveis de ambiente, é preciso indicar para outros des
 É preiciso criar um arquivo .env-example, indicando para outros desenvolvedores todas as variaveis que precisam ser criadas
 
 """
-import dotenv #type: ignore
+import dotenv  # type: ignore
 import os
+
 os.chdir(os.path.dirname(__file__))
 
-dotenv.load_dotenv() #Carrega variaveis de arquivo .env do diretório atual
-print(os.getenv('SENHA1')) # Retorna valor dessas variaveis
+dotenv.load_dotenv()  # Carrega variaveis de arquivo .env do diretório atual
+print(os.getenv("SENHA1"))  # Retorna valor dessas variaveis
 print(*os.environ)
-print('\n\n\n')
-print(dotenv.set_key('.env', 'SENHA2', 'bla2'))
-print(os.getenv('SENHA2'))
-print(dotenv.get_key('.env',"SENHA3"))
+print("\n\n\n")
+print(dotenv.set_key(".env", "SENHA2", "bla2"))
+print(os.getenv("SENHA2"))
+print(dotenv.get_key(".env", "SENHA3"))
 print(dotenv.dotenv_values())

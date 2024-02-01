@@ -92,3 +92,13 @@ p1: Pessoa = {
     "marital_status": "Married",
     "children": [1, 2, 3, 4, 5],
 }
+
+
+milhoes_de_valores: typing.Tuple[typing.Union[int, str], ...] = (
+    1,
+    "dois",
+    3,
+    "quatro",
+    ...,
+)
+print(milhoes_de_valores)
